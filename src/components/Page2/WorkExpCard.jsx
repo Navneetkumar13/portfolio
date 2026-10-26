@@ -10,7 +10,7 @@ const WorkExpCard = () => {
             {/* <h2 className='mb-10 text-4xl font-bold text-white p-10'>
                 Work <span className='text-blue-600'>Experience</span>
             </h2> */}
-            <h2 className="text-4xl font-bold tracking-tight md:text-5xl pt-10 pl-10 pr-10">
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl pt-5 pl-5 pr-5 sm:pt-10 sm:pl-10 sm:pr-10">
               Work <span className="text-blue-500">Experience.</span>
             </h2>
             <div className="mt-4 h-1 w-16 rounded-full bg-blue-500 mb-15 ml-10" />

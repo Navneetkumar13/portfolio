@@ -1,29 +1,31 @@
-import React from 'react'
-import Card from '../Card'
-import { highlights, technologies } from './AboutMeData'
+
+import React from 'react';
+import Card from '../Card';
+import { highlights, technologies } from './AboutMeData';
 
 const AboutMe = () => {
   return (
     <Card>
-      <section className="px-6 py-10 md:px-10 lg:px-12 text-white">
+      <section className="min-w-0 px-4 py-6 text-white sm:px-6 sm:py-10 md:px-10 lg:px-12">
+
         {/* Section Heading */}
-        <div className="mb-8">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
+        <div className="mb-6 sm:mb-8">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-blue-400 sm:text-sm sm:tracking-[0.25em]">
             Get to know me
           </p>
 
-          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             About <span className="text-blue-500">Me.</span>
           </h2>
 
-          <div className="mt-4 h-1 w-16 rounded-full bg-blue-500" />
+          <div className="mt-3 h-1 w-14 rounded-full bg-blue-500 sm:mt-4 sm:w-16" />
         </div>
 
         {/* Introduction */}
-        <div className="max-w-4xl space-y-5 text-base leading-8 text-gray-300 md:text-lg">
+        <div className="max-w-4xl space-y-4 wrap-break-word text-sm leading-7 text-gray-300 sm:space-y-5 sm:text-base sm:leading-8 md:text-lg">
           <p>
             Hi, I'm <span className="font-semibold text-white">Navneet</span>,
-            a software developer from{" "}
+            a software developer from{' '}
             <span className="font-medium text-blue-400">
               Sangam Nagri, Prayagraj
             </span>
@@ -32,7 +34,7 @@ const AboutMe = () => {
           </p>
 
           <p>
-            My core strength lies in{" "}
+            My core strength lies in{' '}
             <span className="font-semibold text-white">
               backend engineering
             </span>
@@ -42,7 +44,7 @@ const AboutMe = () => {
           </p>
 
           <p>
-            I've worked with both{" "}
+            I've worked with both{' '}
             <span className="font-semibold text-white">
               monolithic and microservices architectures
             </span>
@@ -53,7 +55,7 @@ const AboutMe = () => {
           </p>
 
           <p>
-            Beyond writing code, I'm passionate about{" "}
+            Beyond writing code, I'm passionate about{' '}
             <span className="font-semibold text-blue-400">
               solving engineering challenges
             </span>
@@ -63,16 +65,16 @@ const AboutMe = () => {
         </div>
 
         {/* Technology Stack */}
-        <div className="mt-10">
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-widest text-gray-400">
+        <div className="mt-8 sm:mt-10">
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400 sm:mb-4 sm:text-sm sm:tracking-widest">
             Technologies I work with
           </h3>
 
-          <div className="flex flex-wrap gap-2.5">
+          <div className="flex min-w-0 flex-wrap gap-2">
             {technologies.map((tech) => (
               <span
                 key={tech}
-                className="rounded-lg border border-white/10 bg-white/4 px-3 py-2 text-sm text-gray-200 transition-all duration-300 hover:border-blue-500/50 hover:bg-blue-500/10 hover:text-blue-300"
+                className="max-w-full wrap-break-word rounded-lg border border-white/10 bg-white/4 px-2.5 py-1.5 text-xs text-gray-200 transition-colors duration-300 hover:border-blue-500/50 hover:bg-blue-500/10 hover:text-blue-300 sm:px-3 sm:py-2 sm:text-sm"
               >
                 {tech}
               </span>
@@ -81,27 +83,30 @@ const AboutMe = () => {
         </div>
 
         {/* Quick Highlights */}
-        <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid min-w-0 grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-2 xl:grid-cols-4">
           {highlights.map((item) => (
             <div
               key={item.label}
-              className="rounded-xl border border-white/10 bg-white/3 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/40"
+              className="min-w-0 rounded-xl border border-white/10 bg-white/3 p-3 transition-all duration-300 hover:border-blue-500/40 sm:p-4 sm:hover:-translate-y-1"
             >
-              <div className="mb-3 text-xl">{item.icon}</div>
+              <div className="mb-2 text-xl sm:mb-3">
+                {item.icon}
+              </div>
 
               <p className="mb-1 text-xs font-medium uppercase tracking-wider text-gray-500">
                 {item.label}
               </p>
 
-              <p className="text-sm font-semibold text-gray-100">
+              <p className="wrap-break-word text-sm font-semibold text-gray-100">
                 {item.value}
               </p>
             </div>
           ))}
         </div>
+
       </section>
     </Card>
   );
-}
+};
 
-export default AboutMe
+export default AboutMe;

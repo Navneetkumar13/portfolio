@@ -7,9 +7,6 @@ const Page1 = () => {
   return (
     <div className='min-h-screen'>
         <Navbar />
-        {/* <div className='min-h-screen'>
-            <Navbar />
-        </div> */}
         <div id='home' className='flex w-full flex-col lg:flex-row justify-between  p-6 md:p-10 lg:p-20 gap-5'>
             <div className='p-5 w-full lg:w-1/2 min-w-0 lg:h-160 rounded-2xl'>
                 <HeroSection />
@@ -18,7 +15,7 @@ const Page1 = () => {
                 <CardSection />
             </div>
         </div>
-        <div className='text-amber-50 p-20'>
+        <div className='text-amber-50 sm:p-20'>
             <TechCard />
         </div>
     </div>
