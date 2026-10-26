@@ -16,7 +16,7 @@ const ContactCard = () => {
               <div className="mt-4 h-1 w-16 rounded-full bg-blue-500" />
 
             </div>
-            <div className='h-full w-full md:px-10'>
+            <div className='h-full w-full md:px-10 p-5'>
               <ContactItems />
             </div>
         </Card>
