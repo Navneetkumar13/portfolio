@@ -8,7 +8,7 @@ const CardSection = () => {
         src='profile.png'
         alt='Navneet Kumar'
       />
-      <div className='flex lg:flex-row justify-center gap-2 absolute sm:right-20 sm:top-20 rounded-xl bg-white/20 px-3 py-2 min-h-30 min-w-50 font-semibold text-white shadow-lg backdrop-blur-md'>
+      <div className='flex lg:flex-row justify-center gap-2 absolute sm:right-10 sm:top-10 rounded-xl bg-white/20 px-3 py-2 min-h-30 min-w-50 font-semibold text-white shadow-lg backdrop-blur-md'>
         <div className='pt-8 pr-3 items-center'>
           <Briefcase size={32} strokeWidth={1.25} color='#0eb0f0'/>
         </div>

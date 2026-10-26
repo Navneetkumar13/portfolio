@@ -5,12 +5,13 @@ import TechCard from './TechCard'
 
 const Page1 = () => {
   return (
-    <div className='h-full'>
-        <div className='overflow-auto'>
+    <div className='min-h-screen'>
+        <Navbar />
+        {/* <div className='min-h-screen'>
             <Navbar />
-        </div>
-        <div id='home' className='flex flex-col lg:flex-row justify-between w-full p-6 md:p-10 lg:p-20 gap-5'>
-            <div className='p-5 w-full lg:w-1/2 min-w-0 min-h-80 lg:h-160 lg:max-h-[calc(100vh-12rem)] rounded-2xl overflow-auto'>
+        </div> */}
+        <div id='home' className='flex w-full flex-col lg:flex-row justify-between  p-6 md:p-10 lg:p-20 gap-5'>
+            <div className='p-5 w-full lg:w-1/2 min-w-0 lg:h-160 rounded-2xl'>
                 <HeroSection />
             </div>
             <div className='flex min-h-0 min-w-0 h-80 md:h-96 lg:h-160 lg:max-h-[calc(100vh-12rem)] w-full lg:w-1/2 overflow-hidden rounded-2xl'>

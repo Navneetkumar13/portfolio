@@ -1,7 +1,6 @@
 import React from 'react'
 
 const WorkExpItem = (props) => {
-    console.log("here")
   return (
     <div key={props.data.company} className='relative'>
 
